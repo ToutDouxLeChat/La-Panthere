@@ -4,9 +4,9 @@ $(function()
     {
      	preventSubmit: true,
      	submitSuccess: function($form, event)
-		$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('data-success-msg')+"</strong></div></div>"),
 
-	 	{			
+	 	{	
+			$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('data-success-msg')+"</strong></div></div>")		
 			if(!$form.attr('action')) // Check form doesnt have action attribute
 			{
 				event.preventDefault(); // prevent default submit behaviour
@@ -80,4 +80,4 @@ $(function()
 		}
 		
 	 	return path
-	 }
+	}})
