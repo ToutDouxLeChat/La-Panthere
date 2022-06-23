@@ -943,6 +943,7 @@ h4 {
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
+        margin-bottom: -30px;
     }
     .navbar-brand img {
         max-height: 40px;
